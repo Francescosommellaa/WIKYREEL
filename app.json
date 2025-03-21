@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "50e52570-e9f4-4742-a5e2-4fd6312d4fdd"
+      }
+    },
+    "owner": "francescosommellaa"
   }
 }
