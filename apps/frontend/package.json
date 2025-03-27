@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "wikireel",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -14,18 +14,18 @@
     "expo": "~52.0.41",
     "expo-status-bar": "~2.0.1",
     "firebase": "^11.5.0",
-    "react": "19.0.0",
-    "react-native": "0.78.1",
-    "react-native-gesture-handler": "^2.24.0",
-    "react-native-reanimated": "^3.17.1",
-    "react-native-safe-area-context": "^5.3.0",
-    "react-native-screens": "^4.10.0",
-    "zustand": "^5.0.3"
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "react-native-gesture-handler": "^2.20.2",
+    "react-native-reanimated": "^3.16.1",
+    "react-native-safe-area-context": "^4.12.0",
+    "react-native-screens": "~4.4.0",
+    "zustand": "^5.0.3",
+    "expo-updates": "~0.27.4"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
-    "@types/react": "~19.0.12",
-    "@types/react-native": "^0.73.8",
+    "@types/react": "~18.3.12",
     "typescript": "^5.8.2"
   },
   "private": true
