@@ -116,7 +116,7 @@ export default function FeedScreen() {
     },
     gradientOverlay: {
       ...StyleSheet.absoluteFillObject,
-      backgroundColor: "rgba(0,0,0,0.24)",
+      backgroundColor: "rgba(0,0,0,0.28)",
       zIndex: 1,
     },
     overlay: {
