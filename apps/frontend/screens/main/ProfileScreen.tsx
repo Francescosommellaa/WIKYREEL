@@ -23,7 +23,7 @@ const categories = [
   { label: "TECNOLOGIA", color: "#3A7A49" },
 ];
 
-export default function UserProfileScreen() {
+export default function ProfileScreen() {
   const insets = useSafeAreaInsets();
 
   return (

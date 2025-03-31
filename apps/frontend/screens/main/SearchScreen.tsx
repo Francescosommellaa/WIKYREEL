@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function SettingsScreen() {
+export default function SearchScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Io sono Impostazioni</Text>
+      <Text style={styles.text}>Io sono Ricerca</Text>
     </View>
   );
 }
