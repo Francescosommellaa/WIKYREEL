@@ -27,15 +27,15 @@ const icons = {
   plus: { inactive: PlusIcon, active: PlusActiveIcon },
   save: { inactive: SaveIcon, active: SaveActiveIcon },
   settings: { inactive: SettingsIcon, active: SettingsActiveIcon },
-  share: { inactive: ShareIcon, active: ShareIcon }, // solo inattivo disponibile
+  share: { inactive: ShareIcon, active: ShareIcon },
 };
 
 interface IconProps {
   name: keyof typeof icons;
   size?: number;
   style?: StyleProp<ViewStyle>;
-  initiallyActive?: boolean; // stato iniziale icona
-  onPress?: (isActive: boolean) => void; // funzione opzionale alla pressione
+  initiallyActive?: boolean;
+  onPress?: (isActive: boolean) => void;
 }
 
 const Icon: React.FC<IconProps> = ({

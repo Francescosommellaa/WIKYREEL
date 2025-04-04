@@ -24,7 +24,7 @@ const OVERLAY_HEIGHT = 160;
 
 export default function FeedScreen() {
   const insets = useSafeAreaInsets();
-  const ITEM_HEIGHT = Dimensions.get("window").height - insets.bottom;
+  const ITEM_HEIGHT = Dimensions.get("window").height;
 
   const [articles, setArticles] = useState<WikipediaArticle[]>([]);
   const [nextArticles, setNextArticles] = useState<WikipediaArticle[]>([]);
@@ -111,19 +111,19 @@ export default function FeedScreen() {
     },
     gradientOverlay: {
       ...StyleSheet.absoluteFillObject,
-      backgroundColor: "rgba(0,0,0,0.28)",
+      backgroundColor: "rgba(0,0,0,0.26)",
       zIndex: 1,
     },
     overlay: {
       position: "absolute",
       bottom: insets.bottom + 24,
-      left: 0,
-      right: 0,
+      left: 24,
+      right: 24,
       zIndex: 2,
       flexDirection: "row",
       alignItems: "flex-end",
       justifyContent: "space-between",
-      margin: 24,
+      marginBottom: 60,
     },
     text: {
       maxWidth: "80%",
