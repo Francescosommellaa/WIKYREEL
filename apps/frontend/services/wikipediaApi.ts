@@ -1,4 +1,4 @@
-import { setImageWidth } from "../utils/imageUtils"; // ✅ importa dai tuoi utils
+import { setImageWidth } from "../src/utils/imageUtils"; // ✅ importa dai tuoi utils
 
 export type WikipediaArticle = {
   title: string;

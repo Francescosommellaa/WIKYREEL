@@ -9,10 +9,8 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-// Icone
-import EditIcon from "../../assets/icons/edit.svg";
-import SettingsIcon from "../../assets/icons/settings.svg";
-import AddIcon from "../../assets/icons/plus.svg";
+// Icon
+import Icon from "../../ui/Icon";
 
 // Mock categorie (colore da definire tu)
 const categories = [
@@ -34,10 +32,10 @@ export default function ProfileScreen() {
           <Text style={styles.headerTitle}>Profilo</Text>
           <View style={styles.headerIcons}>
             <TouchableOpacity style={styles.iconButton}>
-              <EditIcon width={24} height={24} />
+              <Icon name="edit" size={28} />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <SettingsIcon width={24} height={24} />
+              <Icon name="settings" size={28} />
             </TouchableOpacity>
           </View>
         </View>
@@ -53,9 +51,6 @@ export default function ProfileScreen() {
         {/* 🏷️ Categorie */}
         <View style={styles.categoriesSection}>
           <Text style={styles.sectionLabel}>CATEGORIE</Text>
-          <TouchableOpacity>
-            <AddIcon width={18} height={18} />
-          </TouchableOpacity>
         </View>
         <View style={styles.categoriesList}>
           {categories.map((cat) => (

@@ -4,10 +4,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { enableScreens } from "react-native-screens";
 
 // Importazione delle schermate
-import FeedScreen from "../screens/main/FeedScreen";
-import SearchScreen from "../screens/main/SearchScreen";
-import PremiumScreen from "../screens/main/PremiumScreen";
-import ProfileScreen from "../screens/main/ProfileScreen";
+import FeedScreen from "../components/screens/main/FeedScreen";
+import SearchScreen from "../components/screens/main/SearchScreen";
+import PremiumScreen from "../components/screens/main/PremiumScreen";
+import ProfileScreen from "../components/screens/main/ProfileScreen";
 
 // Importazione delle icone SVG (React component via SVGR o simile)
 import FeedIcon from "../assets/icons/feed.svg";

@@ -16,14 +16,9 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   fetchMultipleArticles,
   WikipediaArticle,
-} from "../../services/wikipediaApi";
+} from "../../../../services/wikipediaApi";
 
-// ✅ Importa le icone SVG dalla cartella assets
-import LikeIcon from "../../assets/icons/like.svg";
-import CommentIcon from "../../assets/icons/comment.svg";
-import SaveIcon from "../../assets/icons/save.svg";
-import ShareIcon from "../../assets/icons/share.svg";
-import ExpandIcon from "../../assets/icons/expand.svg";
+import Icon from "../../ui/Icon";
 
 const OVERLAY_HEIGHT = 160;
 
@@ -129,7 +124,6 @@ export default function FeedScreen() {
       alignItems: "flex-end",
       justifyContent: "space-between",
       margin: 24,
-      gap: 24,
     },
     text: {
       maxWidth: "80%",
@@ -228,19 +222,19 @@ export default function FeedScreen() {
           {/* 👍 Azioni */}
           <View style={styles.actionsContainer}>
             <TouchableOpacity onPress={() => console.log("Like")}>
-              <LikeIcon width={28} height={28} />
+              <Icon name="like" size={28} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log("Espandi")}>
-              <CommentIcon width={28} height={28} />
+            <TouchableOpacity onPress={() => console.log("Comment")}>
+              <Icon name="comment" size={28} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log("Salva")}>
-              <SaveIcon width={28} height={28} />
+            <TouchableOpacity onPress={() => console.log("Save")}>
+              <Icon name="save" size={28} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log("Condividi")}>
-              <ShareIcon width={28} height={28} />
+            <TouchableOpacity onPress={() => console.log("Share")}>
+              <Icon name="share" size={28} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => console.log("Espandi")}>
-              <ExpandIcon width={28} height={28} />
+            <TouchableOpacity onPress={() => console.log("Expand")}>
+              <Icon name="expand" size={28} />
             </TouchableOpacity>
           </View>
         </View>
