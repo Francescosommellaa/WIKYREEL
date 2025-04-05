@@ -9,8 +9,10 @@ import {
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
+import { THEME } from "../../../../../constants/theme";
+
 // Icon
-import Icon from "../../ui/Icon";
+import Icon from "../../../ui/Icon";
 
 // Mock categorie (colore da definire tu)
 const categories = [
