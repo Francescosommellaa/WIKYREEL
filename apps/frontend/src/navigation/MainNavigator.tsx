@@ -4,10 +4,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { enableScreens } from "react-native-screens";
 import { Dimensions, View } from "react-native";
 
-import FeedScreen from "../components/screens/main/FeedScreen";
+import FeedScreen from "../components/screens/main/feed/FeedSwitcherScreen";
 import SearchScreen from "../components/screens/main/SearchScreen";
 import PremiumScreen from "../components/screens/main/PremiumScreen";
-import ProfileScreen from "../components/screens/main/ProfileScreen";
+import ProfileScreen from "../components/screens/main/Profile/ProfileScreen";
 
 import FeedIcon from "../assets/icons/feed.svg";
 import FeedActiveIcon from "../assets/icons/feed-active.svg";
@@ -31,7 +31,7 @@ const icons = {
 
 const { width } = Dimensions.get("window");
 
-export default function BottomNavigator() {
+export default function MainNavigator() {
   return (
     <NavigationContainer>
       <Tab.Navigator
